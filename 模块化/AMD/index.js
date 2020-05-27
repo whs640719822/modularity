@@ -1,0 +1,13 @@
+(function(){
+    console.log(require)
+    require.config({
+        baseUrl:"js/",
+        paths:{
+            module1:"./module1",
+            module2:"./module2"
+        }
+    })
+    require(["module1"],function(module1){
+        module1.showMsg()
+    })
+})()
